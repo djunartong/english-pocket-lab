@@ -5,8 +5,8 @@ import { WA_NUMBER, WA_MESSAGE } from "../constants/data";
 
 const NAV_LINKS = [
   { id: "programs", label: "Programs" },
-  { id: "why", label: "Why EPL" },
-  { id: "achievement", label: "Students" },
+  { id: "why", label: "Why EPL?" },
+  { id: "achievement", label: "Student Achievements" },
   { id: "instagram", label: "Instagram" },
 ];
 

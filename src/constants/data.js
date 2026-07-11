@@ -6,22 +6,26 @@ export const WA_MESSAGE =
 
 export const programs = [
   {
-    icon: "🧒",
-    title: "Kids' English",
-    subtitle: "Usia 6–12 tahun",
-    desc: "Fun, interactive lessons designed for young learners. Speaking, reading, and writing through games and stories.",
-    badge: "Playful & Interactive",
+    icon: "📚",
+    title: "General English",
+    subtitle: "Fun and Interactive!",
+    badge: "Private or Group",
     color: COLORS.pink,
     bgColor: "#FFF0F5",
+    items: ["Kids Class", "Basic Grammar for Adults"],
   },
   {
-    icon: "📝",
-    title: "TOEFL · IELTS · ESP",
-    subtitle: "Remaja & Dewasa",
-    desc: "Structured exam prep and English for Specific Purposes. Boost your score and professional confidence.",
-    badge: "Proven Results",
+    icon: "🎯",
+    title: "ESP",
+    subtitle: "English for Specific Purposes",
+    badge: "Private Only",
     color: COLORS.teal,
     bgColor: "#EEF6F9",
+    items: [
+      "TOEFL ITP Prep",
+      "IELTS Speaking Prep",
+      "English for Professionals",
+    ],
   },
 ];
 

@@ -45,7 +45,7 @@ export default function Footer({ scrollTo }) {
               className="btn-outline-white footer__btn-programs"
               onClick={() => scrollTo("programs")}
             >
-              Lihat Program →
+              Lihat Program
             </button>
           </div>
 

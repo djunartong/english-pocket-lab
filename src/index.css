@@ -81,6 +81,24 @@ body {
   transform: translateY(-2px);
 }
 
+.btn-navy {
+  background: var(--teal);
+  color: var(--white);
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  letter-spacing: 0.5px;
+}
+.btn-navy:hover {
+  background: #0d1e3a;
+  transform: translateY(-2px);
+}
+
 .btn-outline-white {
   background: transparent;
   color: var(--white);
@@ -395,10 +413,26 @@ body {
   color: var(--gray);
   margin-bottom: 16px;
 }
-.program-card__desc {
+.program-card__list {
+  list-style: none;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.program-card__list-item {
   font-size: 15px;
   color: var(--teal);
-  line-height: 1.7;
+  padding-left: 16px;
+  position: relative;
+}
+.program-card__list-item::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: var(--pink);
+  font-size: 10px;
+  top: 3px;
 }
 .program-card__cta {
   margin-top: 28px;

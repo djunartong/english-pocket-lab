@@ -1,5 +1,5 @@
 import FadeIn from "./FadeIn";
-import { programs } from "../constants/data";
+import { programs, WA_NUMBER, WA_MESSAGE } from "../constants/data";
 
 export default function Programs() {
   return (
@@ -32,17 +32,33 @@ export default function Programs() {
                   {p.badge}
                 </div>
                 <h3 className="playfair program-card__title">{p.title}</h3>
-                <div className="lato program-card__subtitle">{p.subtitle}</div>
-                <p className="lato program-card__desc">{p.desc}</p>
+                {p.subtitle && (
+                  <div className="lato program-card__subtitle">
+                    {p.subtitle}
+                  </div>
+                )}
+                <ul className="program-card__list">
+                  {p.items.map((item, j) => (
+                    <li key={j} className="lato program-card__list-item">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+
                 <button
                   className="btn-pink program-card__cta"
                   style={{
                     background: p.color,
                     boxShadow: `0 4px 18px ${p.color}40`,
                   }}
-                  onClick={() => window.open("https://wa.me/", "_blank")}
+                  onClick={() =>
+                    window.open(
+                      `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(WA_MESSAGE)}`,
+                      "_blank",
+                    )
+                  }
                 >
-                  Daftar Sekarang →
+                  Daftar Sekarang
                 </button>
               </div>
             </FadeIn>

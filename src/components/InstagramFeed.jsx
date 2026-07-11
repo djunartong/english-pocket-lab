@@ -31,7 +31,7 @@ export default function InstagramFeed() {
               className="btn-outline-white"
               onClick={() => window.open(IG_URL, "_blank")}
             >
-              Follow us on Instagram →
+              Follow us on Instagram
             </button>
           </div>
         </FadeIn>

@@ -31,10 +31,13 @@ export default function Hero({ scrollTo }) {
           <FadeIn delay={0.3}>
             <div className="hero__ctas">
               <button className="btn-pink" onClick={() => scrollTo("programs")}>
-                🧒 Kids' English
+                📚 General English
               </button>
               <button className="btn-teal" onClick={() => scrollTo("programs")}>
-                📝 TOEFL · IELTS
+                🎯 ESP
+              </button>
+              <button className="btn-navy" onClick={() => scrollTo("why")}>
+                🔍 Why EPL?
               </button>
             </div>
           </FadeIn>
